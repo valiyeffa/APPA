@@ -1,0 +1,82 @@
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .carousel {
+
+        .carousel-inner {
+
+            .carousel-item {
+                position: relative;
+                display: flex;
+                align-items: center;
+
+                .text {
+                    position: absolute;
+                    color: white;
+
+                    margin-left: 90px;
+
+
+                    b {
+                        font-weight: 400;
+                        letter-spacing: 1px;
+                    }
+
+                    h4 {
+                        color: #BA9A2D;
+                        letter-spacing: 2px;
+                        font-size: 30px;
+                    }
+
+                    button {
+                        background-color: #BA9A2D;
+                        color: white;
+                        border: none;
+                        font-size: 18px;
+                        font-weight: 500;
+                        padding: 7px 24px;
+                    }
+
+                    button:hover {
+                        background-color: white;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+
+    .main-bottom {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .photo {
+            overflow: hidden;
+            
+            img {
+                object-fit: cover;
+            }
+
+            img:hover {
+                animation: foto 1s ease;
+            }
+        }
+    }
+
+}
+
+@keyframes foto {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+
+}

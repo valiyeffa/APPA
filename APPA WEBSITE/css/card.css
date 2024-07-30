@@ -1,0 +1,238 @@
+.cards {
+    width: 100%;
+
+    .mini-head {
+        display: flex;
+        width: 35%;
+        justify-content: space-between;
+
+        p>a {
+            text-decoration: none;
+            color: grey;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+
+            &:hover {
+                color: #BA9A2D;
+                transition: 0.5s;
+            }
+        }
+
+        p:nth-child(1) a {
+            border-right: 2px solid rgb(105, 104, 104);
+            padding-right: 20px;
+            color: #BA9A2D;
+        }
+
+        p:nth-child(2) a {
+            border-right: 2px solid rgb(105, 104, 104);
+            padding-right: 20px;
+        }
+    }
+
+    .cards-sect {
+        display: flex;
+        justify-content: space-between;
+
+        .card {
+            width: 20%;
+            border: none;
+
+            &:hover {
+                border: 1px solid #BA9A2D;
+                border-radius: 0;
+            }
+
+            .card-body {
+                font-size: 14px;
+                text-align: center;
+
+            }
+        }
+    }
+}
+
+
+b {
+    color: #BA9A2D;
+}
+
+.star {
+    color: #FBB949;
+    font-size: 11px;
+}
+
+
+.watches , .electronics {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+
+    .right-side {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        .mini-title {
+
+            h5 {
+                font-weight: 400;
+                font-size: 16px;
+                border-bottom: 2px solid;
+                padding-bottom: 10px;
+                letter-spacing: 1px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+        }
+
+        .watches-cards, .electronics-cards{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+
+            .card {
+                max-width: 370px;
+                border-color: rgba(200, 200, 200, 0.199);
+                border-radius: 0;
+
+                &:hover {
+                    border: 1px solid #BA9A2D;
+
+                }
+
+                .card-body {
+                    background-color: #F6F6F6;
+
+                    .card-text {
+
+                        a {
+                            color: gray;
+                            padding: 5px 7px;
+                            margin: 7px;
+                            background-color: white;
+                            transition: 0.5s;
+                            font-size: 14px;
+
+                            &:hover {
+                                background-color: #BA9A2D;
+                                color: white;
+                            }
+                        }
+
+                        del{
+                            color: grey;
+                            font-weight: 400;
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.electronics{
+    .electronics-cards{
+
+        .card{
+
+            .row{
+                display: flex;
+                align-items: center;
+                background-color: #F7F7F7;
+            }
+        }
+    }
+}
+
+
+.cameras-card {
+    width: 100%;
+    height: 90vh;
+    background-color: #DFDFDF;
+    display: flex;
+    justify-content: center;
+
+    .for-camera-window {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .about-camera {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .card-body-text {
+                border: 2px dotted white;
+                padding: 25px 45px;
+
+                h3 {
+                    font-size: 19px;
+                }
+
+                p {
+                    del {
+                        color: grey;
+                        font-size: 14px;
+                    }
+
+                    b {
+                        font-size: 20px;
+                        color: black;
+                        padding: 13px;
+                        font-weight: 500;
+                    }
+
+                    small {
+                        font-size: 13px;
+                        color: grey;
+                    }
+                }
+
+                .card-text {
+                    a {
+                        border: 1px solid;
+                        color: white;
+                        padding: 5px 7px;
+                        margin: 7px;
+
+                        &:hover {
+                            background-color: #BA9A2D;
+                            transition: 0.3s;
+                            border-color: #BA9A2D;
+                        }
+                    }
+                }
+            }
+
+            .sale-timer {
+                display: flex;
+
+                .boxes {
+                    background-color: white;
+                    padding: 10px 40px;
+                    text-align: center;
+                    border-right: 1px solid #BA9A2D;
+
+                    &:nth-child(4) {
+                        border-right: none;
+                    }
+
+                    small {
+                        color: grey;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+
+    }
+
+}

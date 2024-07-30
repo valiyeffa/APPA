@@ -1,0 +1,85 @@
+@import url(main.css);
+@import url(card.css);
+@import url(testimonials.css);
+@import url(blog.css);
+
+.container{
+    width: 78%;
+}
+
+header {
+    background: #f6f6f6;
+    border-top: 5px solid #b9992d;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .sects {
+        display: flex;
+        justify-content: space-between;
+
+        .left-sect {
+            display: flex;
+        }
+
+        .right-sect {
+            display: flex;
+
+            a {
+                text-decoration: none;
+                color: grey;
+                padding: 5px;
+            }
+        }
+
+        .dropdown a {
+            background-color: #f6f6f6;
+            color: grey;
+            border: none;
+        }
+    }
+}
+
+
+.container-fluid {
+    height: 10vh;
+    font-size: 17px;
+
+    form {
+        a {
+            text-decoration: none;
+            color: grey;
+            padding: 5px;
+            font-size: 20px;
+        }
+    }
+
+    .collapse ul li a {    
+        width: 90px;
+        height: 12vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .collapse ul li a:hover {
+        background-color: #BA9A2D;
+        transition: 0.4s;
+
+    }
+
+    .collapse ul li:nth-child(1) {
+        background-color: #BA9A2D;
+
+    }
+
+}
+
+
+
+@media (max-width:990px) {
+    header{
+        display: none !important;
+    }
+}
